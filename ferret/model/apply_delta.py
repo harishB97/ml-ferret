@@ -1,10 +1,10 @@
 """
 Usage:
 # 7B
-python3 -m ferret.model.apply_delta \
-    --base ./model/vicuna-7b-v1-3 \
-    --target ./model/ferret-7b-v1-3 \
-    --delta ./checkpoints/ferret_ft_clipL336_vicunaV1-3-7b_3Ep_dataV16_RSamplerV2/ferret-7b-delta
+python3 -m ferret.model.apply_delta --base ./model/vicuna-7b-v1-3 --target ./model/ferret-7b-v1-3 --delta ./checkpoints/ferret_ft_clipL336_vicunaV1-3-7b_3Ep_dataV16_RSamplerV2/ferret-7b-delta
+
+# 13B
+python3 -m ferret.model.apply_delta --base /users/PAS2136/harishbabu/.cache/huggingface/hub/models--lmsys--vicuna-13b-v1.3/snapshots/6566e9cb1787585d1147dcf4f9bc48f29e1328d2 --target ./model/ferret-13b-v1-3 --delta 
 
 # 13B
 python3 -m ferret.model.apply_delta \
